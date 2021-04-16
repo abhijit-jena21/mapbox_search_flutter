@@ -118,7 +118,7 @@ class _MapBoxPlaceSearchWidgetState extends State<MapBoxPlaceSearchWidget>
         builder: (context, _) {
           return Container(
             height: _containerHeight.value,
-            decoration: _containerDecoration(),
+            // decoration: _containerDecoration(),
             padding: EdgeInsets.only(left: 0, right: 0, top: 15),
             alignment: Alignment.center,
             child: Column(
@@ -173,11 +173,11 @@ class _MapBoxPlaceSearchWidgetState extends State<MapBoxPlaceSearchWidget>
               },
             ),
           ),
-          Container(width: 15),
-          GestureDetector(
-            child: Icon(Icons.search, color: Colors.blue),
-            onTap: () {},
-          )
+          // Container(width: 15),
+          // GestureDetector(
+          //   child: Icon(Icons.search, color: Colors.blue),
+          //   onTap: () {},
+          // )
         ],
       ),
     );
