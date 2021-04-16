@@ -215,10 +215,33 @@ class _MapBoxPlaceSearchWidgetState extends State<MapBoxPlaceSearchWidget>
   // Styling
   InputDecoration _inputStyle() {
     return InputDecoration(
-      icon: Icon(Icons.add_business_outlined),
+      
+      prefixIcon: Icon(Icons.add_business_outlined),
+      contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+      focusedBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: Theme.of(context).primaryColor, width: 2.0),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.black38, width: 2.0),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.red[400], width: 2.0),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: Theme.of(context).primaryColor, width: 2.0),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
+      ),
+      border: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: Theme.of(context).primaryColor, width: 2.0),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
+      ),
       hintText: widget.searchHint,
-      border: InputBorder.none,
-      contentPadding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
     );
   }
 
