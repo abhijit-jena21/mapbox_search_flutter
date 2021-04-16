@@ -215,6 +215,7 @@ class _MapBoxPlaceSearchWidgetState extends State<MapBoxPlaceSearchWidget>
   // Styling
   InputDecoration _inputStyle() {
     return InputDecoration(
+      icon: Icon(Icons.add_business_outlined),
       hintText: widget.searchHint,
       border: InputBorder.none,
       contentPadding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
